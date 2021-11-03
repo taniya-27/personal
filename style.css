@@ -1,0 +1,351 @@
+body{
+    font-size: 25px;
+    color: rgb(255, 239, 209);
+    background-color: #303841;
+   margin: 200px 0px 0px 0px;
+   scroll-behavior: smooth;
+}
+html{
+ scroll-behavior: smooth;
+}
+div.nav{width:100%;
+    display: flex;
+    height: 100px;
+    background-color: #be3144;
+    top: 0;
+    position: fixed;
+    z-index: 2;
+}
+nav{display: flex;
+    position:absolute;
+    margin-bottom: 200px;
+    right: 75px;
+}
+div.items{
+    display: flex;
+}
+img.logo{
+    padding: 140px 0 40px 0;
+    height: 50px;
+    width: 50px;
+    border: 0;
+}
+.hamburger {
+    display: none;
+}
+   .me{
+       margin-left: 6%;
+       font-size: 38px;
+   } 
+   p.pink{
+       color: #be3144;
+   }
+    p.welcome{
+        font-size: 60px;
+        margin-left:40%;
+    }
+    nav p{
+font-size: 30px;
+cursor:pointer;
+margin-left:100px;
+color:wheat;
+    }
+    nav p:hover{
+        text-decoration: underline;
+        transition: 0.3s;
+    }
+    .home{
+        padding-left: 7.5%;
+        margin-top: -50px;
+        font-size: 35px;
+        color: #be3144;
+    }
+   
+    .homepage{
+        display: flex;
+        margin-top: 300px;
+    }
+    img{
+        margin: -115px 0 0 7%;
+        width: 25%;
+        border-radius: 10px;
+        border: 2px solid wheat;
+    }
+    img.photo:hover{
+        animation: glow 1s 0s infinite ease-in-out;
+    }
+    @keyframes glow {
+        0%{
+            box-shadow: 2px 2px 2px 2px rgb(255, 237, 163);
+        }
+        50%{
+            box-shadow: 2px 2px 2px 2px black;
+        }
+        100%{
+            box-shadow: 2px 2px 2px 2px #be3144;;
+        }
+    }
+    .name{
+        font-size: 40px;
+    }
+
+    p.about{
+        width:50%;
+        margin-left:10%;
+    }
+    .edudiv{
+        display: flex;
+        /* align-items: center; */
+        width: 100%;
+        justify-content: center;
+    }
+  #navs{
+      padding:4% 0 0 7%;
+  }
+  #three{
+    margin-left: -60px;
+    
+  }
+  .design{
+      display: flex;
+      margin-left: 140px;
+  }
+  img.dess{
+      border: 0;
+      height: 120px;
+      width: 300px;
+      margin: 0px 0 -10px 150px;
+  }
+  .img{
+      width: 200px;
+      border: 0px;
+      margin: 10px 20px 10px 0px;
+  }
+  .aboutsec{
+      margin-top: -32px;
+    background-color: #353f4b;
+  }
+ .prosec{
+    background-color: #353f4b;
+ }
+ .gallery{
+     text-align: center;
+ }
+ img.gal{
+     width: 300px;
+     height: 300px;
+     margin-top: 100px;
+ }
+ img.gal:hover{
+    animation: image 1s 0s infinite ease-in-out;
+    position: relative;
+    z-index: 1;
+    box-shadow:2px 2px 2px 2px #740110; 
+ }
+ @keyframes image {
+     0%{
+         transform: rotate(30deg);
+     }
+     50%{
+         transform: rotate(-30deg);
+     }
+     100%{
+         transform: rotate(30deg);
+     }
+    
+ }
+ a{
+     color: rgb(224, 40, 40);
+     text-decoration: none; 
+    }
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #082f42; 
+    } 
+    ::-webkit-scrollbar-thumb {
+        background: #ffd6d6;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #ec516b;
+    }
+
+  .icon{
+      display: none;
+  }
+ 
+  .fa-bars{
+      color: black;
+      box-shadow: none;
+  }
+  .fa {  
+    padding: 10px 7px 3px 10px;  
+   color:#ec516b ;
+   cursor: pointer;
+   border-radius: 70%;
+    height: 40px;
+    width: 40px;
+  }  
+  .fa-github:hover , .fa-instagram:hover , .fa-globe:hover , .fa-tasks:hover{
+      box-shadow: 2px 2px 2px 0px #740110;
+  }
+  footer{
+      box-shadow: 20px 20px 20px 20px #740110;
+      /* border: 2px solid red; */
+      padding: 70px 0 20px 0;
+      text-align: center;
+      background-color: #353f4b;
+  }
+
+
+@media screen  and (max-width: 48em) {
+    
+        .topnav a {display: none;}
+        .topnav a.icon {
+          display: block;
+          margin: 17px -20px 0 0px;
+        }
+  .topnav.responsive {position: relative;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    margin-left: 0px;
+    right: 99px;
+    margin-right: 226px;
+    left: -29px;
+background-color: #c43649;}
+  .topnav.responsive .icon {
+    position: fixed;
+    top: 3px;
+  }
+  nav.topnav.responsive{
+      
+    text-align: center;
+    align-items: center;
+    padding-right: 293px;
+    right: 0px;
+    height: 230px;
+    margin-right: -122px;
+    left: -67px;
+  }
+  html, body {
+    overflow-x: hidden;
+    font-size: 18px;
+  }
+  .topnav.responsive a {
+    float: left;
+    display: block;
+  }
+  nav p{
+    cursor:pointer;
+    margin-left:0px;
+    color:wheat;}
+  /* .topnav.active {
+    left: 0;
+} */
+  nav{
+    position: fixed;
+    width: 65%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow:
+        0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  .design{
+      display: absolute;
+      margin-left: -100px;
+  }
+ 
+  img.logo{
+    height: 20px;
+    width: 20px;
+    padding: 135px 0 10px 0;
+}
+  p.about{
+      width: 30%;
+  }
+.imgs{
+    margin-left: -500px;
+}
+.topnav{
+    text-align: end;
+    flex-direction: column;
+}
+div.nav{
+    height: 60px;
+    
+}
+.photo{
+    width: 350px;
+    margin-left: 0px;
+}
+
+.homepage{
+    margin-top: 150px;
+    flex-direction: column;
+    align-items: center;
+}
+h3{
+    font-size:20px ;
+}
+div.items{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.dess{
+    display: none;
+}
+p.about{
+    margin-left: 35%;
+    width: 300px;
+}
+p.propara{
+    margin-left:10px;
+}
+.me{
+    margin:20px 0;
+    font-size: 30px;
+}
+.edusec{
+    margin-left: 5px;
+}
+nav p{
+    font-size: 15px;
+    cursor:pointer;
+    margin-left: 250px;
+}
+p#home{
+    margin-left: 100px;
+}
+.gallery{
+    margin-left: 0px;
+    align-items: center;
+}
+a#linka1{
+  margin-left: 150px;
+}
+}
+@media screen and (min-width: 100px) and (max-width:399) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      display: block;
+      float: right;
+      left: 950px;
+    }
+.topnav.responsive {position: relative;}
+.topnav.responsive .icon {
+position: fixed;
+/* float: left; */
+left: 0px;
+top: 7px;
+/* text-align: end; */
+}
+html, body {
+overflow-x: hidden;
+font-size: 18px;
+}
+}
